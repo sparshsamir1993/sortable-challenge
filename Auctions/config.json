@@ -1,0 +1,28 @@
+{
+  "sites": [
+    {
+      "name": "houseofcheese.com",
+      "bidders": ["AUCT", "BIDD", "QWE1"],
+      "floor": 32
+    },
+    {
+      "name": "abc.com",
+      "bidders": ["BIDD", "QWE1"],
+      "floor": 20
+    }
+  ],
+  "bidders": [
+    {
+      "name": "AUCT",
+      "adjustment": -0.0625
+    },
+    {
+      "name": "BIDD",
+      "adjustment": 0
+    },
+    {
+      "name": "QWE1",
+      "adjustment": 0.03
+    }
+  ]
+}
