@@ -1,5 +1,6 @@
 let fs = require("fs");
 let printToFile = require("../Utils/printToFile");
+const findMaxBidder = require("./FindMaxBidder");
 exports.RunAuction = () => {
   let rawConfig = fs.readFileSync(__dirname + "/config.json");
   let rawInput = fs.readFileSync(__dirname + "/input.json");
@@ -21,7 +22,8 @@ exports.RunAuction = () => {
   );
 
   //processing aution list (input)
-  printToFile(JSON.stringify(siteDetailMap, null, 4));
 
-  console.log(siteDetailMap, bidderAdjustmentMap);
+  let maxBidders = findMaxBidder(input, siteDetailMap, bidderAdjustmentMap);
+  printToFile(JSON.stringify(maxBidders, null, 4));
+  // console.log(siteDetailMap, bidderAdjustmentMap);
 };

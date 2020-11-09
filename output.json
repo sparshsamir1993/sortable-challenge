@@ -1,10 +1,26 @@
-{
-    "houseofcheese.com": {
-        "floor": 32,
-        "bidders": {}
-    },
-    "abc.com": {
-        "floor": 20,
-        "bidders": {}
-    }
-}
+[
+    [
+        {
+            "bidder": "AUCT",
+            "bid": 35,
+            "unit": "banner"
+        },
+        {
+            "bidder": "BIDD",
+            "bid": 60,
+            "unit": "sidebar"
+        }
+    ],
+    [
+        {
+            "bidder": "AUCT",
+            "bid": 35,
+            "unit": "banner"
+        },
+        {
+            "bidder": "BIDD",
+            "bid": 60,
+            "unit": "sidebar"
+        }
+    ]
+]
