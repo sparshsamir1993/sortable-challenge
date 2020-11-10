@@ -1,2 +1,3 @@
 const RunAuction = require("./Auctions/RunAuction");
-RunAuction.RunAuction();
+console.log(process.argv);
+RunAuction.RunAuction(process.argv);

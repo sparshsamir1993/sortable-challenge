@@ -17,15 +17,15 @@ let findMaxBidder = (input, siteDetailMap, bidderAdjustmentMap) => {
         }
       }
     }
-    let siteAcutionResult = [];
+    let siteAuctionResult = [];
     for (adUnit in maxHash) {
       let { bidder, unit, bid } = maxHash[adUnit];
-      siteAcutionResult.push({ bidder, bid, unit });
+      siteAuctionResult.push({ bidder, bid, unit });
     }
-    result.push(siteAcutionResult);
+    result.push(siteAuctionResult);
   }
 
-  return result;
+  return siteDetailMap;
 };
 
 module.exports = findMaxBidder;
